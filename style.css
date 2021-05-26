@@ -1,0 +1,112 @@
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Heebo', sans-serif;
+}
+.popup{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    background-image: linear-gradient(to right,#e1eec3,#f05053 );
+    width: 500px;
+    height:100vh;
+}
+h1{
+    font-weight: 600;
+    line-height: 20px;
+    color: rgb(121, 77, 77);
+}
+.container{
+    width:450px;
+    height:500px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+    
+  }
+  .popup .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transition:all 0.2s ease-in-out;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:450px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    box-sizing:border-box;
+  }
+  .popup .close-btn {
+    color:#000;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    cursor: pointer;
+    border-radius:50px;
+    
+  }
+  .popup .close-btn:hover{
+      background-color:gray;
+      color:#fff;
+  }
+  .popup .overlay.active {
+    display:block;
+  }
+  .popup .content.active{
+    transition:all 0.3s ease-in-out;
+    transform:translate(-50%,-50%) scale(1.1);
+    font-size:4rem;
+  }
+  .description{
+      color:red;
+  }
+  .description.won{
+    color:green;
+}
+  #check-number{
+      margin-top:20px;
+    padding:10px 30px;
+    border-radius: 30px;
+    font-size:30px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+  }
+  #check-number:hover{
+      background-color:lightgray ;
+  }
+  #check-number:active{
+      transform: translateY(2px);
+  }
+  .guess-input{
+      padding:10px;
+      outline:none;
+      font-size:30px;
+      border-radius:3px;
+      color: #000;
+      background-color: rgba(255,255,255,0.5);
+  }
+  span{
+      font-size:20px
+  }
+  .output-field{
+      display:none;
+  }

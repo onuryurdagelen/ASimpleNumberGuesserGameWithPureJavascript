@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="popup" id="popup-1">
+        <div class="container">
+            <h1>Number Guesser</h1>
+            <span>Guess a number between 1 to 10</span>
+            <input type="text" class="output-field" readonly>
+            <input class="guess-input" type="number" value="" placeholder="Enter your guess">
+            <span class="check-guess"></span>
+            <!-- <span class="check-remain"></span> -->
+            <input type="submit" value="Number Check" id="check-number" >
+        </div>
+        <div class="overlay"></div>
+        <div class="content">
+          <p class="description"></p>
+          <button class="close-btn">Play Again</button>
+        </div>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
